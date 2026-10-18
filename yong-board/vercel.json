@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    { "source": "/api/:path*", "destination": "http://222.239.249.197:8080/api/:path*" },
+    { "source": "/kakao-navi/:path*", "destination": "https://apis-navi.kakaomobility.com/:path*" },
+    { "source": "/tmap-api/:path*", "destination": "https://apis.openapi.sk.com/:path*" },
+    { "source": "/((?!api/|kakao-navi/|tmap-api/|assets/).*)", "destination": "/index.html" }
+  ]
+}
